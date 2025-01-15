@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Demander une Adresse</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}" />
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<div class="container mt-4">
+    <h1 class="text-primary">Demander une Adresse</h1> <!-- Couleur principale -->
+    <form action="/meteo" method="post">
+        <div class="mb-3">
+            <label for="address" class="form-label">Veuillez entrer votre adresse :</label>
+            <input type="text" name="address" id="address" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Obtenir la météo à cette adresse !</button>
+    </form>
+</div>
+
+<script th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script> <!-- jQuery -->
+<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js}"></script> <!-- Bootstrap JS -->
+</body>
+</html>

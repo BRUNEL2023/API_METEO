@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Accueil</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}" />
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<div class="container mt-4">
+    <h1 class="text-primary">Bienvenue sur la page d'accueil</h1> <!-- Couleur principale -->
+    <p>Ceci est votre page d'accueil.</p>
+</div>
+
+<script th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script> <!-- jQuery -->
+<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js}"></script> <!-- Bootstrap JS -->
+</body>
+</html>
